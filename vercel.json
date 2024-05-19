@@ -1,12 +1,13 @@
 {
     "version": 2,
     "builds": [
-      { "src": "main.py", "use": "@vercel/python" }
+        { "src": "main.py", "use": "@vercel/python" }
     ],
     "routes": [
-      { "src": "/(.*)", "dest": "/main.py" }
+        { "src": "/(.*)", "dest": "/main.py" }
     ],
     "env": {
-      "SOLARA_APP": "pages/__init__.py"
+        "APP_MODULE": "main:app",
+        "SOLARA_APP": "pages/__init__.py"
     }
 }
