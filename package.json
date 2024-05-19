@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "dev": "vercel dev --listen 8000"
+  },
+  "dependencies": {
+    "vercel": "^34.2.0"
+  }
+}
